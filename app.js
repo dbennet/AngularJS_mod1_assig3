@@ -47,7 +47,7 @@
             },
             controller: FoundItemsDirectiveController,
             bindToController: true,
-            controllerAs: "ctrl"
+            controllerAs: "ctrller"
         };
 
         return ddo;
