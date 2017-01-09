@@ -1,6 +1,12 @@
 <ol>
   <li ng-repeat="item in ctrller.foundItems">
-    {{ item.name }}
+    <h3> {{ item.name }} 
+    <span> {{item.short_name}} </span>
+    </h3>
+    <p> {{item.description}} </p>
     <button ng-click="ctrller.onRemove({index: $index});">Remove Item</button>
   </li>
+  <div "ng-if ctrller.foundItems.length === 0">
+  <h2>NOTHING FOUND !</h2>
+  </div>
 </ol>
